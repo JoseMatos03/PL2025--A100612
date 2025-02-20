@@ -31,7 +31,8 @@ PL2025::A100612/
 
 ## 📋 TPCs Realizados
 
-- [TPC1](./TPC1/README.md) - [Título do TPC1]
+- [TPC1](./TPC1/README.md) - [Somador On/Off]
+- [TPC2](./TPC2/README.md) - [Parser de CSV]
 
 ---
 
