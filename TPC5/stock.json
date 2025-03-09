@@ -1,0 +1,146 @@
+[
+    {
+        "cod": "A01",
+        "nome": "Coca-Cola 330ml",
+        "quant": 10,
+        "preco": 1.2
+    },
+    {
+        "cod": "A02",
+        "nome": "Pepsi 330ml",
+        "quant": 8,
+        "preco": 1.1
+    },
+    {
+        "cod": "A03",
+        "nome": "Fanta Laranja 330ml",
+        "quant": 7,
+        "preco": 1.2
+    },
+    {
+        "cod": "A04",
+        "nome": "Sprite 330ml",
+        "quant": 9,
+        "preco": 1.2
+    },
+    {
+        "cod": "B01",
+        "nome": "Lipton Ice Tea Pêssego 330ml",
+        "quant": 6,
+        "preco": 1.3
+    },
+    {
+        "cod": "B02",
+        "nome": "Sumol Ananás 330ml",
+        "quant": 8,
+        "preco": 1.2
+    },
+    {
+        "cod": "B03",
+        "nome": "Red Bull 250ml",
+        "quant": 5,
+        "preco": 2.5
+    },
+    {
+        "cod": "B04",
+        "nome": "Monster Energy 500ml",
+        "quant": 4,
+        "preco": 2.8
+    },
+    {
+        "cod": "C01",
+        "nome": "Água Vitalis 500ml",
+        "quant": 12,
+        "preco": 0.7
+    },
+    {
+        "cod": "C02",
+        "nome": "Água Luso 500ml",
+        "quant": 11,
+        "preco": 0.7
+    },
+    {
+        "cod": "C03",
+        "nome": "Snickers",
+        "quant": 10,
+        "preco": 1.0
+    },
+    {
+        "cod": "C04",
+        "nome": "Twix",
+        "quant": 9,
+        "preco": 1.0
+    },
+    {
+        "cod": "D01",
+        "nome": "Kit Kat",
+        "quant": 8,
+        "preco": 1.1
+    },
+    {
+        "cod": "D02",
+        "nome": "Kinder Bueno",
+        "quant": 7,
+        "preco": 1.3
+    },
+    {
+        "cod": "D03",
+        "nome": "Oreo Pacote",
+        "quant": 6,
+        "preco": 1.5
+    },
+    {
+        "cod": "D04",
+        "nome": "Bolacha Belga Lotus",
+        "quant": 5,
+        "preco": 1.6
+    },
+    {
+        "cod": "E01",
+        "nome": "M&M’s Chocolate",
+        "quant": 8,
+        "preco": 1.4
+    },
+    {
+        "cod": "E02",
+        "nome": "Milka Chocolate",
+        "quant": 7,
+        "preco": 1.2
+    },
+    {
+        "cod": "E03",
+        "nome": "Batata Lays Clássica",
+        "quant": 10,
+        "preco": 1.5
+    },
+    {
+        "cod": "E04",
+        "nome": "Doritos Queijo",
+        "quant": 9,
+        "preco": 1.7
+    },
+    {
+        "cod": "F01",
+        "nome": "Pringles Original",
+        "quant": 8,
+        "preco": 2.0
+    },
+    {
+        "cod": "F02",
+        "nome": "Ruffles Churrasco",
+        "quant": 7,
+        "preco": 1.8
+    },
+    {
+        "cod": "F03",
+        "nome": "Ruffles Clássicas",
+        "quant": 6,
+        "preco": 1.5
+    },
+    {
+        "cod": "F04",
+        "nome": "Cheetos Onda",
+        "quant": 6,
+        "preco": 1.5
+    }
+]
