@@ -1,0 +1,149 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> expression
+Rule 1     expression -> expression PLUS term
+Rule 2     expression -> expression MINUS term
+Rule 3     expression -> term
+Rule 4     term -> term MULT factor
+Rule 5     term -> factor
+Rule 6     factor -> NUMBER
+
+Terminals, with rules where they appear
+
+MINUS                : 2
+MULT                 : 4
+NUMBER               : 6
+PLUS                 : 1
+error                : 
+
+Nonterminals, with rules where they appear
+
+expression           : 1 2 0
+factor               : 4 5
+term                 : 1 2 3 4
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . expression
+    (1) expression -> . expression PLUS term
+    (2) expression -> . expression MINUS term
+    (3) expression -> . term
+    (4) term -> . term MULT factor
+    (5) term -> . factor
+    (6) factor -> . NUMBER
+
+    NUMBER          shift and go to state 4
+
+    expression                     shift and go to state 1
+    term                           shift and go to state 2
+    factor                         shift and go to state 3
+
+state 1
+
+    (0) S' -> expression .
+    (1) expression -> expression . PLUS term
+    (2) expression -> expression . MINUS term
+
+    PLUS            shift and go to state 5
+    MINUS           shift and go to state 6
+
+
+state 2
+
+    (3) expression -> term .
+    (4) term -> term . MULT factor
+
+    PLUS            reduce using rule 3 (expression -> term .)
+    MINUS           reduce using rule 3 (expression -> term .)
+    $end            reduce using rule 3 (expression -> term .)
+    MULT            shift and go to state 7
+
+
+state 3
+
+    (5) term -> factor .
+
+    MULT            reduce using rule 5 (term -> factor .)
+    PLUS            reduce using rule 5 (term -> factor .)
+    MINUS           reduce using rule 5 (term -> factor .)
+    $end            reduce using rule 5 (term -> factor .)
+
+
+state 4
+
+    (6) factor -> NUMBER .
+
+    MULT            reduce using rule 6 (factor -> NUMBER .)
+    PLUS            reduce using rule 6 (factor -> NUMBER .)
+    MINUS           reduce using rule 6 (factor -> NUMBER .)
+    $end            reduce using rule 6 (factor -> NUMBER .)
+
+
+state 5
+
+    (1) expression -> expression PLUS . term
+    (4) term -> . term MULT factor
+    (5) term -> . factor
+    (6) factor -> . NUMBER
+
+    NUMBER          shift and go to state 4
+
+    term                           shift and go to state 8
+    factor                         shift and go to state 3
+
+state 6
+
+    (2) expression -> expression MINUS . term
+    (4) term -> . term MULT factor
+    (5) term -> . factor
+    (6) factor -> . NUMBER
+
+    NUMBER          shift and go to state 4
+
+    term                           shift and go to state 9
+    factor                         shift and go to state 3
+
+state 7
+
+    (4) term -> term MULT . factor
+    (6) factor -> . NUMBER
+
+    NUMBER          shift and go to state 4
+
+    factor                         shift and go to state 10
+
+state 8
+
+    (1) expression -> expression PLUS term .
+    (4) term -> term . MULT factor
+
+    PLUS            reduce using rule 1 (expression -> expression PLUS term .)
+    MINUS           reduce using rule 1 (expression -> expression PLUS term .)
+    $end            reduce using rule 1 (expression -> expression PLUS term .)
+    MULT            shift and go to state 7
+
+
+state 9
+
+    (2) expression -> expression MINUS term .
+    (4) term -> term . MULT factor
+
+    PLUS            reduce using rule 2 (expression -> expression MINUS term .)
+    MINUS           reduce using rule 2 (expression -> expression MINUS term .)
+    $end            reduce using rule 2 (expression -> expression MINUS term .)
+    MULT            shift and go to state 7
+
+
+state 10
+
+    (4) term -> term MULT factor .
+
+    MULT            reduce using rule 4 (term -> term MULT factor .)
+    PLUS            reduce using rule 4 (term -> term MULT factor .)
+    MINUS           reduce using rule 4 (term -> term MULT factor .)
+    $end            reduce using rule 4 (term -> term MULT factor .)
+
